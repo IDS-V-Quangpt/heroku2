@@ -97,7 +97,9 @@
   </modules>
 
   <build>
-    <pluginManagement>
+    
+    <directory>${project.basedir}/helloworld-application</directory><pluginManagement>
+    
       <plugins>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
