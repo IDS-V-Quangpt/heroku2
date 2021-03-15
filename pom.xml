@@ -116,6 +116,19 @@
             </annotationProcessorPaths>
           </configuration>
         </plugin>
+        
+         <plugin>
+	      <groupId>com.heroku.sdk</groupId>
+	      <artifactId>heroku-maven-plugin</artifactId>
+	      <version>3.0.4</version>
+	      <configuration>
+	      <appName>tranquil-falls-46670</appName>
+	        <processTypes>
+	          <web>java $JAVA_OPTS -Dserver.port=$PORT -jar helloworld-application/target/*.jar -Dspring.profiles.active=prod</web>
+	        </processTypes>
+	      </configuration>
+	    </plugin>
+        
       </plugins>
     </pluginManagement>
   </build>
